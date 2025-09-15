@@ -38,6 +38,10 @@ def main():
     print(f"config: {config}")
     print(f"local_config: {local_config}")
     
+    test_dirs = read_dirs(config)
+    for dir in test_dirs:
+        print(dir)
+    
     
     dirs = read_dirs(local_config)
     for dir in dirs:
