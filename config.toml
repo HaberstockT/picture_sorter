@@ -1,6 +1,6 @@
 [environment]
 main_dir = "C:"
-sub_dir = "temp"
+sub_dir = "temp_picture_sorter"
 
 [input]
 watch_dir = "inbox"
