@@ -1,0 +1,44 @@
+[environment]
+main_dir = "C:"
+sub_dir = "temp"
+
+[input]
+watch_dir = "inbox"
+
+[output]
+image_target_dir = "images"
+video_target_dir = "videos"
+raw_target_dir = "raw"
+duplicates_dir = "duplicates"
+error_dir = "error"
+index_db = "index_images.db"
+
+[processing]
+stable_seconds = 2
+max_workers = 4
+
+[extensions]
+image_extensions = [
+    "jpg", "jpeg", "png", "gif", "bmp", "tiff", 
+    "heif", "heic", "hif",
+    ]
+video_extensions = [
+    "mp4", "mov", "avi", "mkv", "wmv", "flv",
+]
+canon_raw = ["CR3", "CR2"]
+nikon_raw = ["NEF"]
+darktable = ["xmp"]
+other_raw_extensions = [
+    "ARW", "RAF", "RW2", 
+    "ORF", "DNG", "SWR", 
+    "X3F",
+    ]
+
+
+[dedup]
+strategy = "hash"  # Options: "hash", "name"
+hash_algorithm = "sha256"  # Options: "md5", "sha1", "sha256"
+hash_chink_size = 8192
+
+[logging]
+level = "INFO"
