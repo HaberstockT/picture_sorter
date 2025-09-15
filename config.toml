@@ -11,7 +11,7 @@ video_target_dir = "videos"
 raw_target_dir = "raw"
 duplicates_dir = "duplicates"
 error_dir = "error"
-index_db = "index_images.db"
+index_db = "index_images"
 
 [processing]
 stable_seconds = 2

@@ -1,0 +1,18 @@
+# Define your local paths tor environment, input and output
+
+
+[environment]
+main_dir = "//NAS/Folder"
+sub_dir = "Subfolder"
+
+[input]
+watch_dir = "Input_Folder"
+
+[output]
+image_target_dir = "Images"
+video_target_dir = "Videos"
+raw_target_dir = "Raw_Images"
+duplicates_dir = "duplicates"
+error_dir = "error"
+index_db = "index"
+

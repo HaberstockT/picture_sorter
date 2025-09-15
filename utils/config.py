@@ -11,16 +11,17 @@ def read_dirs(conf):
     out = conf["output"]
     
     main_dir = Path(envir["main_dir"])
-    sub_dir = main_dir / envir["sub_dir"]
+    sub_dir:Path = main_dir / envir["sub_dir"]
     
-    watch_dir = sub_dir / inp["watch_dir"]
+    watch_dir:Path = sub_dir / inp["watch_dir"]
     
-    image_target_dir = sub_dir / out["image_target_dir"]
-    video_target_dir = sub_dir / out["video_target_dir"]
-    raw_target_dir = sub_dir / out["raw_target_dir"]
-    duplicates_dir = sub_dir / out["duplicates_dir"]
-    error_dir = sub_dir / out["error_dir"]
-    index_db = sub_dir / out["index_db"]
+    image_target_dir:Path = sub_dir / out["image_target_dir"]
+    video_target_dir:Path = sub_dir / out["video_target_dir"]
+    raw_target_dir:Path = sub_dir / out["raw_target_dir"]
+    duplicates_dir:Path = sub_dir / out["duplicates_dir"]
+    error_dir:Path = sub_dir / out["error_dir"]
+    index_db:Path = sub_dir / out["index_db"]
+
     
     dirs = [
         watch_dir,
